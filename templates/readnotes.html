@@ -1,0 +1,12 @@
+{% extends 'dashboard.html' %}
+{% block addcss %}
+   {% endblock %}
+{% block content %}
+
+            <h1>{{notesdata[3]}}</h1>
+            <label>Title</label>
+            <input type="text" name="title" value="{{notesdata[1]}}"readonly placeholder="your book title"> <br>
+            <label class="two">Description</label>
+            <textarea type="text" name="content" placeholder="Enter your Description" readonly>{{notesdata[2]}} </textarea><br>
+            <button type="submit">submit</button>
+{% endblock content %}

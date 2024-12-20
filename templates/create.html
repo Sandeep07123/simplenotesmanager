@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+    body{
+        background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240209/pngtree-task-management-business-planning-app-illustration-vector-image_15623958.jpg");
+        background-size: cover;
+    }
+    .one{
+        margin-left: 14%;
+        margin-right: 62%;
+        background-color: #A1EEBD;
+        border-radius: 7px;
+        border: none;
+        box-shadow: 1px 2px 3px black;
+        padding: 24px 40px;
+        margin-top: 09%;
+
+        
+    }
+    .one input{
+        padding-top: 8px;
+        padding-bottom:8px;
+        padding-right: 29px;
+        margin-top: 9px;
+        background-color: aliceblue;
+        border-radius: 5px;
+        margin-bottom: 9px;
+        border: none;
+
+    }
+    .btn{
+        padding-top: 2%;
+        margin-top: 3%;
+        padding-bottom: 2%;
+        margin-left: 60px;
+        border: none;
+        background-color: aqua;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+     {% with messages = get_flashed_messages() %}
+     {% if messages %}
+     {% for message in messages %}
+     <center>
+       <h1>{{ message }}</h1>
+     </center>
+     {% endfor %}
+     
+     {% endif %}
+     {% endwith %}
+</head>
+<body>
+    <form method="post" >
+        <div class="one">
+        <label for="username">Username<br><input type="text" placeholder="Username" name="username"></label><br>
+        <label for="email">Email<br><input type="email" placeholder="Enter your email" name="email"></label><br>
+        <label for="password">Password<br><input type="password" placeholder="Enter your password" name="password"></label><br>
+        <label for="password">Confirm password<br><input type="password" placeholder="Enter your password" name="cpassword" id="password"></label><br>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

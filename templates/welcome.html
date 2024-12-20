@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+      body{
+        background: url("https://img.freepik.com/free-photo/top-view-desk-concept-with-copy-space_23-2148236856.jpg");
+        background-size: cover;
+      }  
+      h1{
+        text-align: center;
+        color: royalblue;
+      }
+      .one{
+        margin-left: 44%;
+        margin-top: 13%;
+
+      }
+      .one button{
+        padding-top: 6px;
+        padding-bottom: 7px;
+        border: none;
+        background-color: salmon;
+        border-top-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+      }
+      .btn1{
+        margin-right: 20px;
+      }
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Snp</h1>
+    </header>
+      <div class="one">
+          <a href="{{url_for('create')}}"><button type="submit">create</button></a>
+          <a href="{{url_for('login')}}"><button type="submit">login</button></a>
+      </div>
+        
+</body>
+</html>
+
